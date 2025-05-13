@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Annihilation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="ui-container">
+            <div id="score">Score: 0</div>
+            <div id="wave-info">Wave: 1</div>
+            <div id="player-stats"> 
+                <div id="player-health">Health: 100</div>
+                <div id="player-armor">Armor: 0</div>
+            </div>
+            <div id="player-coins">Coins: 0</div> <div id="weapon-info">Weapon: Pistol | Ammo: ∞</div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="pause-message" class="hidden">PAUSED</div>
+
+        <div id="start-screen">
+            <h1>Zombie Annihilation</h1>
+            <p>WASD/Arrows: Move<br>Mouse: Aim<br>Click/Space: Shoot<br>'Q': Cycle Weapon<br>'P': Pause<br>Survive the horde!</p>
+            <button class="game-button" id="start-button">Start Game</button>
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <h2>Game Over!</h2>
+            <p id="final-score">Your Score: 0</p>
+            <p id="final-wave">You reached Wave: 0</p>
+            <button class="game-button" id="restart-button">Play Again</button>
+        </div>
+
+        <div id="shop-screen" class="hidden">
+            <h2>Wave <span id="shop-wave-number">1</span> Complete! - Armory</h2>
+            <p>Your Coins: <span id="shop-player-coins">0</span></p>
+            <div id="shop-items-container">
+                </div>
+            <button class="game-button" id="shop-next-wave-button">Start Next Wave</button>
+        </div>
+        
+        <div id="on-screen-messages" class="message-log hidden"></div>
+        <div id="visual-effects-container"></div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

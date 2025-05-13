@@ -1,0 +1,31 @@
+Create a web-based zombie annihilation game that can be launched online.
+The game should have the following features:
+- Player movement (WASD/Arrows)
+- Mouse aiming
+- Shooting (Click/Space)
+- Weapon cycling ('Q')
+- Pause functionality ('P')
+- Start screen, game over screen, and a shop screen between waves.
+- UI elements for score, player health, armor, coins, wave info, and weapon info.
+- Different types of zombies with varying abilities (normal, fast, tank, spitter, boss).
+- Different types of weapons (pistol, shotgun, rifle, flamethrower, grenade launcher).
+- Power-ups (weapon, health, armor, coins).
+- Explodable environment objects (barrels).
+- Visual effects for explosions.
+- On-screen messages and pause messages.
+- Game logic to handle waves, zombie spawning, player damage, power-up collection, shop transactions.
+- Drawing functions for all game elements on an HTML canvas.
+- All major variables should be in all caps at the top of the script.
+- Use try-except blocks for error handling with descriptive print statements (currently for JS, this means robust checks and console error logging).
+- Implement the project with separation of concerns (HTML, CSS, JS in separate files).
+- Refactor static/script.js for improved game mechanics: delta time, state management, modularity, and robustness.
+- Create and update a `requirements.txt` file.
+- Use `termcolor` for printing steps (for Python backend).
+- Use `encoding="utf-8"` when using `with open` (for Python backend).
+- Introduce a Python Flask backend to serve the frontend files (index.html, style.css, script.js).
+  - Create `app.py` with Flask.
+  - Create `static` directory for CSS and JS.
+  - Create `templates` directory for HTML.
+  - Update `index.html` to use correct paths for static files served by Flask.
+  - Update `requirements.txt` with Flask and termcolor.
+- Deploy the game online so it is accessible via the web. 
