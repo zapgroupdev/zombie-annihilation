@@ -1,0 +1,8 @@
+modules = ["bun-1.1", "nodejs-20", "python-3.12", "web"]
+run = "run zombie"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "run zombie"]
