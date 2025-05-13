@@ -5,4 +5,4 @@ run = "run zombie"
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "run zombie"]
+run = ["sh", "-c", "python app.py"]
